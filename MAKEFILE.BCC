@@ -2,6 +2,10 @@
 # By Jonathan Mark <uunet!microsoft!jonm>
 
 # stripped down version for Borland C++ by Volker Blasius, 11jul93
+# updated by Dan FitzGerald <daniel.j.fitzgerald@gmail.com>, 18feb19
+#    - Added "clean" make target
+#    - Added missing UUDECODE utility to *.zip archive
+#    - Tested using Borland C++ 2.0 on PC-DOS 5.0
 
 CC = bcc
 TARGET = dungeon.exe
@@ -88,30 +92,92 @@ supp.obj: supp.c funcs.h vars.h
 	$(CC) $(CFLAGS) $(TERMFLAG) -c supp.c	
 
 actors.obj: funcs.h vars.h
+	$(CC) $(CFLAGS) $(TERMFLAG) -c actors.c 
+
 ballop.obj: funcs.h vars.h
+	$(CC) $(CFLAGS) $(TERMFLAG) -c ballop.c 
+
 clockr.obj: funcs.h vars.h
+	$(CC) $(CFLAGS) $(TERMFLAG) -c clockr.c 
+
 demons.obj: funcs.h vars.h
+	$(CC) $(CFLAGS) $(TERMFLAG) -c demons.c 
+
 dmain.obj: funcs.h vars.h
+	$(CC) $(CFLAGS) $(TERMFLAG) -c dmain.c  
+
 dso1.obj: funcs.h vars.h
+	$(CC) $(CFLAGS) $(TERMFLAG) -c dso1.c   
+
 dso2.obj: funcs.h vars.h
+	$(CC) $(CFLAGS) $(TERMFLAG) -c dso2.c   
+
 dso3.obj: funcs.h vars.h
+	$(CC) $(CFLAGS) $(TERMFLAG) -c dso3.c   
+
 dso4.obj: funcs.h vars.h
+	$(CC) $(CFLAGS) $(TERMFLAG) -c dso4.c   
+
 dso5.obj: funcs.h vars.h
+	$(CC) $(CFLAGS) $(TERMFLAG) -c dso5.c   
+
 dso6.obj: funcs.h vars.h
+	$(CC) $(CFLAGS) $(TERMFLAG) -c dso6.c   
+
 dso7.obj: funcs.h vars.h
+	$(CC) $(CFLAGS) $(TERMFLAG) -c dso7.c   
+
 dsub.obj: funcs.h vars.h
+	$(CC) $(CFLAGS) $(TERMFLAG) -c dsub.c   
+
 dverb1.obj: funcs.h vars.h
+	$(CC) $(CFLAGS) $(TERMFLAG) -c dverb1.c 
+
 dverb2.obj: funcs.h vars.h
+	$(CC) $(CFLAGS) $(TERMFLAG) -c dverb2.c 
+
 lightp.obj: funcs.h vars.h
+	$(CC) $(CFLAGS) $(TERMFLAG) -c lightp.c 
+
 nobjs.obj: funcs.h vars.h
+	$(CC) $(CFLAGS) $(TERMFLAG) -c nobjs.c  
+
 np.obj: funcs.h vars.h
+	$(CC) $(CFLAGS) $(TERMFLAG) -c np.c     
+
 np1.obj: funcs.h vars.h parse.h
+	$(CC) $(CFLAGS) $(TERMFLAG) -c np1.c    
+
 np2.obj: funcs.h vars.h parse.h
+	$(CC) $(CFLAGS) $(TERMFLAG) -c np2.c    
+
 np3.obj: funcs.h vars.h parse.h
+	$(CC) $(CFLAGS) $(TERMFLAG) -c np3.c    
+
 nrooms.obj: funcs.h vars.h
+	$(CC) $(CFLAGS) $(TERMFLAG) -c nrooms.c 
+
 objcts.obj: funcs.h vars.h
+	$(CC) $(CFLAGS) $(TERMFLAG) -c objcts.c 
+
 rooms.obj: funcs.h vars.h
+	$(CC) $(CFLAGS) $(TERMFLAG) -c rooms.c  
+
 sobjs.obj: funcs.h vars.h
+	$(CC) $(CFLAGS) $(TERMFLAG) -c sobjs.c  
+
 sverbs.obj: funcs.h vars.h
+	$(CC) $(CFLAGS) $(TERMFLAG) -c sverbs.c 
+
 verbs.obj: funcs.h vars.h
+	$(CC) $(CFLAGS) $(TERMFLAG) -c verbs.c  
+
 villns.obj: funcs.h vars.h
+	$(CC) $(CFLAGS) $(TERMFLAG) -c villns.c
+
+clean:
+	del $(TARGET)
+	del *.obj
+	del dungeon.map
+	del dtextc.uu
+	del dtextc.dat
