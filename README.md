@@ -11,7 +11,7 @@ A C-language port of Dungeon 2.7s (original MIT Zork plus changes by @ianlanceta
 * Development Tools
   * Borland C++ 2.0
 
-This code began as a copy of the f2c-generated C port of Dungeon 2.7s, the 03-11-1991 port of Dungeon 2.7a done by @ianlancetaylor, with contributing work by Jonathan Mark and Volker Blasius, availble from [ifarchive.org](https://www.ifarchive.org/if-archive/games/source/dungn27s.zip).
+This code began as a copy of the f2c-generated C port of Dungeon 2.7s, the 03-11-1991 port of Dungeon 2.7a done by [Ian Lance Taylor](https://github.com/ianlancetaylor), with contributing work by Jonathan Mark and Volker Blasius, availble from [ifarchive.org](https://www.ifarchive.org/if-archive/games/source/dungn27s.zip).
 
 ## Build Instructions
 
@@ -107,6 +107,8 @@ This code includes a copy of This site was built using [David S. Peterson's](mai
 | supp.c       | support routines and more processing                                     |
 | sverbs.c     | simple verbs                                                             |
 | vars.h       | header file with variable definitions                                    |
+| UUDECODE.ASM | source for David S. Peterson's uudecode MS-DOS utility                   |
+| UUDECODE.COM | binary for David S. Peterson's uudecode MS-DOS utility                   |
 | verbs.c      | principal verbs                                                          |
 | villns.c     | villain processors                                                       |
 
@@ -130,7 +132,8 @@ This has been compiled and tested on a DECstation 3100 running Ultrix 4.0, a VAX
 
 I consider my changes to be in the public domain, as did previous contributors (see the History file for more detail).  The original source, however, is copyright.
 
-Ian Lance Taylor [ian@airs.com](mailto:ian@airs.com) or uunet!airs!ian
+Ian Lance Taylor
+[ian@airs.com](mailto:ian@airs.com) or uunet!airs!ian
 11 March 1991
 
 ### Volker Blasius (11-jul-93)
