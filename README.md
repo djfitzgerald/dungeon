@@ -31,7 +31,13 @@ make -fmakefile.bcc clean
 
 ## Copyright and License
 
-This code includes a copy of This site was built using [David S. Peterson's](mailto:dspeter1@eos.ncsu.edu) UUDECODE utility for 8088 assembler and a DOS binary.  This is copyrighted software and distributed under the following conditions:
+From the original FORTRAN sources:
+> Dungeon is a development prototype of the game ZORK™, which is
+> available commercially from Infocom, Inc, on most personal computers.
+> Copyright on the Dungeon sources is retained by Infocom, and commercial
+> use is strictly prohibited. ZORK™ is a trademark of Infocom, Inc.
+
+In addition, this code also (currently) includes a copy of [David S. Peterson's](mailto:dspeter1@eos.ncsu.edu) UUDECODE utility for 8088 assembler and a DOS binary.  This is copyrighted software and distributed under the following conditions:
 
 ```
 ;----------------------------------------------------------------------------
@@ -265,5 +271,4 @@ means of distributing their fix.  They decided to then use this fork
 as a way of hosting Dungeon C code garunteed to build on their IBM
 PC Portable (IBM 5155).  The README and HISTORY files were moved
 into the README.md file.  The UNIX makefile was rewritten and tested
-on a modern laptop running GCC 5.4.0 20160609, and then on the 5155
-running Minix 2.0.2 and its' built in cc compiler.
+on a modern laptop running GCC 5.4.0 20160609.
